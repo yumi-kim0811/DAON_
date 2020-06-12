@@ -1,0 +1,335 @@
+@import url('common.css');
+
+wrap{
+    width:100%;
+	overflow:hidden;
+}
+/*------------------header-----------------*/
+header{
+	position:absolute;
+	width:70%;
+	left:15%; top:35px;
+	z-index: 2;
+}
+header nav{
+	width:1240px;
+	height:64px;
+	border:0px;
+	background:#31004a;
+	margin:  auto;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	padding: 0px 40px;
+}
+header nav h1 a{
+	left:0;top:0;
+    font-size:45px;
+	font-family: 'Baskerville Old Face';
+	color:white;
+	letter-spacing: -2px;/*자간*/}
+
+header nav ul{
+	display: flex;
+	justify-content: space-between;
+}
+header nav ul li:after {
+	content:'|';
+	color:white;
+	opacity: .5;
+	display: inline-block;
+}
+header nav ul li:last-of-type:after {
+	content:'';
+}
+header nav ul li a {
+	color:white;
+	width:130px;
+	font-size:17px;
+	font-weight: 500;
+}
+header nav ul li > a:hover{
+	color:#f2bb36;
+}
+header nav ul li{
+	position: relative;
+	text-align: center;
+}
+/*-----------sub menu------------*/
+header ul li div{
+	width:90%;
+	height:0;
+	padding:0;
+	position:absolute;
+	left:0%; top: 43.5px;
+	background:#fff;
+	text-align: center;
+	align-items: center;
+	overflow: hidden;
+	transition: 0.7s;
+}
+
+}
+header ul li:nth-of-type(3) div{
+	height: 0px;
+}
+header nav ul li div a{
+	color: #333131;
+	padding: 10px 0;
+	font-size:15px;
+	display:block;
+	height: 40px;
+}
+
+header nav ul li div a:hover{
+	background:#f2bb36 url('../img/icon_right.png')left center no-repeat;
+	color:white;
+}
+
+header ul li:hover div{
+	height: 80px;
+}
+header ul li:nth-of-type(3):hover div{
+	height: 120px;
+}
+
+
+/*----예약하기----*/
+header .reservation{
+	position: relative;
+}
+
+header .reservation div{
+	background:#f7af01;	
+	margin: auto;
+	padding:3px;
+}
+header .reservation a{
+	background:rgba(247,175,1,0.5);
+	padding:0px 29px;
+    border:1.5px solid #fff;
+	text-align: center;
+	color:white;
+	line-height:2;
+}
+/*------------------section-------------------*/
+section{
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	position:relative;
+	top: 0; left: 0;
+}
+section figure img{
+	width:100%;
+	align-items: center;
+}
+section .mini-menu{
+	width:100%;
+	margin: 2% 0%;
+}
+section .mini-menu ul{
+	float:right;
+	position:relative;
+	right:5%; top:50%;
+}
+sectrion .mini-menu ul li{
+	display:inline-block;
+}
+section .mini-menu ul a:after{
+	content:'>';
+	color:#777373;
+	opacity:.5;
+	margin-left:10px;
+}
+section .mini-menu ul a:last-of-type:after{
+	content:'';
+}
+section .mini-menu ul a{
+	font-weight: 600;
+	font-family: '나눔스퀘어라운드';
+	font-size:15px;
+}
+section .DAON-INTRO{
+	position: relative;
+    left:0; top:0;
+	text-align: center;
+	height: 160px;
+}
+section .DAON-INTRO span{
+    width:94px; height: 5px;
+	background:#f2bb36;
+	margin-bottom: 5px;
+}
+section .DAON-INTRO h1{
+	font-family: '나눔스퀘어라운드';
+	font-size:36px;
+}
+section #content{
+	width:100%;
+    margin: 0 auto;
+    text-align: center;
+}
+section #content .one{
+	width:80%; height:100vh;
+    margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+section #content .one h1{
+    margin-bottom: 1%;
+	font-family: '나눔스퀘어라운드';
+	font-size:25px;
+	font-weight: 600;
+    z-index: 15;
+}
+section #content .one button{
+	width:60px; height: 60px;
+	background: rgba(242,187,54,1);
+	z-index: 25;
+	border:none;
+	color:white;
+}
+section #content .one button:nth-of-type(1){
+	position: absolute;
+	left:0; top:45%;
+}
+section #content .one button:nth-of-type(2){
+	position: absolute;
+	right:0; top:45%;
+}
+section #content .one button img:nth-of-type(1){
+	width:45%;
+	margin-top: 15%;
+}
+section #content .one button:nth-of-type(2) img{
+	width:45%;
+	margin-top: 15%;
+}
+section #content .one ul{
+	width:800%; height: 90vh;
+	display: flex;
+}
+section #content .one ul li{
+	width:100%;
+	border:green;
+	margin-bottom:2%;
+}
+section #content .one ul li img{
+	width:100%;
+}
+section #content .two{
+	width:80%; height: 100vh;
+    margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+section #content .two h1{
+	margin-bottom: 1%;
+	font-family: '나눔스퀘어라운드';
+	font-size:25px;
+	font-weight: 600;
+    z-index: 15;
+}
+section #content .two button{
+	width:60px; height: 62px;
+	background: rgba(242,187,54,1);
+	z-index: 25;
+	border:none;
+	color:white;
+	text-align: center;
+}
+section #content .two button img:nth-of-type(1){
+	width:45%;
+	margin-top:15%;
+}
+section #content .two button:nth-of-type(2) img{
+	width:45%;
+	margin-top:15%;
+}
+section #content .two button:nth-of-type(1){
+	float:left;
+	position: absolute;
+	left:0; top:45%;
+}
+section #content .two button:nth-of-type(2){
+	float:right;
+	position: absolute;
+	right:0; top:45%;
+}
+section #content .two ul{
+	width:300%; height: 90vh;
+	display: flex;
+}
+section #content .two ul li{
+	width:100%;
+	margin-bottom:2%;
+}
+section #content .two ul li img{
+	width:100%;
+}
+/*---------------footer--------------*/
+footer{
+	width:100%;
+	background:#cdcdcd;
+	padding: 1%;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+footer #footer{
+	width:70%;
+	margin: 0 auto;
+}
+footer .left {
+	float: left;
+	width: 15%;
+}
+footer .left h1{
+	font-family: 'Baskerville Old Face';
+	font-size:45px;
+	color:#fff;
+	margin-top:13%;
+}
+footer .right{
+	float:right;
+	width:80%;
+	text-align: center;
+}
+footer .right ul{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding: 0 50px;
+}
+footer .right ul li{
+}
+footer .right ul li:after{
+	content:'ㅣ';
+	color:#a0a0a0;
+	display:inline-block;
+	padding: 0 40px;
+}
+footer .right ul li:nth-of-type(3):after{
+	content:'';
+}
+footer .right ul li>a{
+	color:white;
+}
+footer .right ul li a{
+	font-weight: 400;
+	color:#fff;
+	font-family: '나눔스퀘어';
+	font-size:17px;
+}
+footer .right ul li a:hover{
+	color:#a0a0a0;
+}
+
+footer .right p{
+	white-space: pre-line;
+	color:#fff;
+	font-size:14.6px;
+	padding-top:1.3%;
+}

@@ -1,0 +1,59 @@
+html,body{margin:0;}
+ul,li{list-style:none;margin:0; padding:0;}
+*{margin:0;padding:0;}
+.container{width:70%; margin:100px auto; text-align:center;}
+ul{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+li{width:32%; font-size:0; border:1px solid #000; margin-top:30px; position:relative;}
+li p{font-size:0; height:300px; overflow:hidden;}
+li figcaption{
+    font-size:18px; position:absolute; bottom:0; left:0; padding:10px 0; background:rgba(0,0,0,0.6); color:#fff; width:100%;
+    text-transform:uppercase;
+}
+li img{
+	width:100%;
+	height:100%;
+	transition:.5s;
+}
+li:hover p img{transform: scale(1.3)}
+
+
+.ly-pop{
+    position:fixed; top:0; left:0;
+    width:100%; height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+}
+.ly-pop figure{max-width:60%;}
+.ly-pop figure figcaption{color:#fff; padding:20px 0; text-align:center; text-transform:uppercase;}
+.ly-pop img{width:100%;}
+
+.ly-pop .btn{
+    position:absolute;
+    left:10%; top:45%;
+    width:80%;
+    z-index:5;
+}
+.ly-pop .btn a{
+    background:rgba(255,255,255,0.6);
+    width:100px; height:100px;
+    display:inline-block;
+    border-radius:100px;
+    text-align:center; line-height:100px;
+    text-transform:uppercase;
+}
+.ly-pop .btn a:nth-of-type(1){float:left;}
+.ly-pop .btn a:nth-of-type(2){float:right;}
+
+.ly-pop .aa{
+	position:fixed; top:0; left:0;
+    width:100%; height:100%;
+    background:rgba(0,0,0,0.8);
+    display:flex;
+	z-index: -3;
+}
