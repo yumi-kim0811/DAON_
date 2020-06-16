@@ -2,6 +2,7 @@ $(function () {
    
     var bgInterval;
     var btnInterval;
+    
     //배경 바뀌기
     function bgChange(){
         bgInterval = setInterval(function(){

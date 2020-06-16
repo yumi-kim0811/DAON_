@@ -169,13 +169,15 @@ section .DAON-INTRO h1{
 section #content{
 	width:100%;
     margin: 0 auto;
-    text-align: center;
+	text-align: center;
+	margin-bottom: 5%;
 }
 section #content .one{
 	width:80%; height:100vh;
     margin: 0 auto;
 	position: relative;
 	overflow: hidden;
+	margin-bottom: 2.5%;
 }
 section #content .one h1{
     margin-bottom: 1%;
@@ -210,10 +212,12 @@ section #content .one button:nth-of-type(2) img{
 section #content .one ul{
 	width:800%; height: 90vh;
 	display: flex;
+	position: absolute;
+	top:5%; left:0;
+	transition: .5s;
 }
 section #content .one ul li{
 	width:100%;
-	border:green;
 	margin-bottom:2%;
 }
 section #content .one ul li img{
@@ -261,6 +265,8 @@ section #content .two button:nth-of-type(2){
 section #content .two ul{
 	width:300%; height: 90vh;
 	display: flex;
+	position: absolute;
+	top:5%; left:0;
 }
 section #content .two ul li{
 	width:100%;
@@ -272,7 +278,7 @@ section #content .two ul li img{
 /*---------------footer--------------*/
 footer{
 	width:100%;
-	background:#cdcdcd;
+	background:#31004a;
 	padding: 1%;
 	margin: 0 auto;
 	text-align: center;
