@@ -136,21 +136,26 @@ section .main .daon-bg img{
     left:0; top:0;
 }
 section .main .daon-bg img:nth-of-type(1){
-    z-index: 3;
+    z-index: 7;
 }
 section .main .daon-bg img:nth-of-type(2){
-    z-index: 2;
+    z-index: 6;
 }
 section .main .daon-bg img:nth-of-type(3){
-    z-index: 1;
+    z-index: 5;
 }
 section .main .daon-bg img:nth-of-type(4){
-    z-index: 1;
+    z-index: 4;
 }
 section .main .daon-bg img:nth-of-type(5){
+    z-index: 3;
+}
+section .main .daon-bg img:nth-of-type(6){
+    z-index: 2;
+}
+section .main .daon-bg img:nth-of-type(7){
     z-index: 1;
 }
-
 section .main-letter{
 	position: absolute;
 	left:65%; top: 35%;
@@ -192,6 +197,7 @@ section .main .play button{
     margin-left: 5px;
 	opacity:.5;
 	justify-content: space-between;
+	outline-style: none;
 }
 section .play button:hover{
 	opacity:1;
@@ -199,141 +205,152 @@ section .play button:hover{
 section .play button:nth-of-type(1){
     opacity: 1;
 }
-section .play button:nth-last-of-type(1){
-    border-radius: none;
-}
-section .play button:nth-of-type(6){
-	background:none; 
-    color:white;
-    width:20px; height: 20px;
-    margin-left: none;
-}
 
-/*----------contents----------*/
-
-section #contents_1{
-	width:100%; height:100%;
-	border:1px solid green;
+/*----------content_1----------*/
+#contents_1{
+	width:100%; height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
 }
-section #contents_1 ul{
-	width:70%;
-	margin:0 auto;
-	overflow: hidden;
+#contents_1 ul{
+	width:75%; height:90%;
 	font-size:0;
-	border:1px solid orange;
+	padding: 0 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
-section #contents_1 ul li{
+#contents_1 ul li{
 	display:inline-block;
-	margin:1% 2% 1% 1%;
+	margin-bottom: 1.5%;
 	overflow: hidden;
-	border:1px solid blue;
 	font-size:0;
-	/* display: flex;
-	flex-direction: column;
-	justify-content: space-between; */
+	width:32%; height: 44vh;
+	border:1px solid lightgray;
 }
-/* 첫번째 이미지 호버 안되게 하기 */
-section #contents_1 ul li:first-child:hover a img{
-	transform: scale3d(1, 1, 1);
-}
-section #contents_1 ul li:hover a img{
-	transform: scale3d(1.2, 1.2, 1);
-}
-section #contents_1 ul li a{
-	margin:0;
-}
-section #contents_1 ul li a img{
-	max-width:100%;
-	transition: .5s;
-}
-
-section #contents_1 ul li:nth-of-type(1){
-	width:820px;
+#contents_1 ul li:nth-of-type(1){
+	width:65.8%;
 	position:relative;
 }
 section #contents_1 ul li:nth-of-type(1) a{
 	display: block;
-	width: 100%;
-	height: 470.28px;
+	width: 100%; height: 44vh;
 	background: url("../img/p_02.jpg") no-repeat center/ cover;
 }
-section #contents_1 ul li a:nth-of-type(2){
-
-}
-section #contents_1 ul li .con_01{
-	width:100%;
+#contents_1 ul li .con_01{
+	width:100%; height: 100%;
 	position:absolute;
-	left:50%; top:25%;
+	left:50%; top:0%;
 	transform: translateX(-50%);
 	text-align: center;
-	line-height: 1.4;
+	line-height: 1.2;
 	z-index: 60;
+	border:1px solid violet;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
-section #contents_1 ul li .con_01 strong{
-	font-size:26px;
-	font-family: '나눔스퀘어라운드';
-	color:white;
-}
-section #contents_1 ul li .con_01 h1{
-	font-size:108px;
+#contents_1 ul li .con_01 h3{
+	font-size:1.5rem;
 	font-family: 'Baskerville BT';
 	color:white;
 	line-height: 0.85;
 }
+#contents_1 ul li .con_01 strong{
+	font-size:6.5rem;
+	font-family: 'Baskerville Old Face';
+	color:white;
+}
 section #contents_1 ul li .con_01 p{
-	font-size:18px;
-	font-family: 'Baskerville BT';
+	font-size:1.25rem;
+	font-family: '나눔스퀘어라운드';
+	font-weight: 600;
 	color:white;
 	white-space: pre-line;
+	letter-spacing: inherit;
+	line-height:130%;
 }
-section #contents_1 ul li:nth-of-type(1){
+/* 첫번째 이미지 호버 안되게 하기 */
+#contents_1 ul li:first-child:hover a:nth-of-type(1){
+	transform: scale3d(1, 1, 1);
+}
+#contents_1 ul li:hover a:nth-of-type(1){
+	transform: scale3d(1.2, 1.2, 1);
+}
+#contents_1 ul li a{
+	margin:0;
+	width: 100%;
+	font-size: 0;
+}
+#contents_1 ul li a{
+	max-width:100%;
+	transition: .5s;
+}
 
+/* li 칸 순서대로 */
+#contents_1 ul li:nth-of-type(2){
+	margin-bottom: 0px;
 }
-section #contents_1 ul li:nth-of-type(2){
-	width:400px;
+#contents_1 ul li:nth-of-type(2) a:nth-of-type(1){
+	height: 80%;
+	background: url("../img/p_03.jpg");
 }
-section #contents_1 ul li:nth-of-type(3){
-	width:400px;
+#contents_1 ul li:nth-of-type(2) a:nth-of-type(2){
+	height:20%;
 }
-section #contents_1 ul li:nth-of-type(4){
-	width:400px;
+#contents_1 ul li:nth-of-type(3) a:nth-of-type(1){
+	height: 80%;
+	background: url("../img/p_04.jpg");
 }
-section #contents_1 ul li:nth-of-type(5){
-	width:400px;
+#contents_1 ul li:nth-of-type(3) a:nth-of-type(2){
+	height: 20%;
 }
-section #contents_1 ul li:nth-of-type(6){
-	width:400px;
+#contents_1 ul li:nth-of-type(4) a:nth-of-type(1){
+	height: 80%;
+	background: url("../img/p_05.jpg");
 }
-section #contents_1 ul li .contentBox_all{
-	width:400px; height: 128.5px;
+#contents_1 ul li:nth-of-type(4) a:nth-of-type(2){
+	height: 20%;
+}
+#contents_1 ul li:nth-of-type(5) a:nth-of-type(1){
+	height: 80%;
+	background: url("../img/p_06.jpg");
+}
+#contents_1 ul li:nth-of-type(5) a:nth-of-type(2){
+	height: 20%;
+}
+
+#contents_1 ul li .contentBox_all{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	width:100%; height: 100%;
 	background:#fff;
 	text-align: center;
-	padding:38px 43px;
 	position: relative;
 }
-
-section #contents_1 ul li .contentBox_all:hover{
+#contents_1 ul li .contentBox_all:hover{
 	background:#a864a8;
 	color:#fff;
-	border:none;
 }
-
-section #contents_1 ul li .contentBox_all strong{
-	font-size:30px;
+#contents_1 ul li .contentBox_all strong{
+	font-size:1.75rem;
 	font-family: 'Baskerville BT';
+	text-align: center;
 	line-height: 20px;
 	color:inherit;
+	margin-bottom: 1.5%;
 }
-
-section #contents_1 ul li .contentBox_all p{
+#contents_1 ul li .contentBox_all p{
 	font-size: 21px;
 	font-family: '나눔스퀘어라운드';
 	color:inherit;
 }
-section #contents_1 ul li .contentBox_all p small{
+#contents_1 ul li .contentBox_all p small{
 	color:inherit;
 }
-
 /*-------------------content_2---------------------*/
 
 section #contents_2{
@@ -394,12 +411,12 @@ section #contents_2 .button{
 	width:261px;
 	height:64px;
 	border-radius:354px;
-	background:#47628d;
+	background: #f2bb36;
 	margin:0 auto;
 	margin-top:28px;
 }
 section #contents_2 .button:hover{
-	background: #f2bb36;
+	background: #47628d;
 }
 section #contents_2 .button a strong{
 	color:white;
@@ -411,6 +428,61 @@ section #contents_2 .button a strong{
 }
 
 /*--------------------contents_3--------------------*/
+#contents_3{
+	width:100%; height:50vh;
+	border:1px solid orchid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#contents_3 .board{
+	width:70%; height:65%;
+	border:1px solid orange;
+	display: flex;
+	justify-content: space-between;
+}
+#contents_3 .board .notice-information{
+	float:left;
+	width:47%; height: 100%;
+}
+#contents_3 .board .notice-information .title{
+	width:100%;
+	height: max-content;
+	border-bottom:3px solid #31004a ;
+	display: flex;
+	justify-content : space-between;
+}
+#contents_3 .board .notice-information .title h4{
+	font-size:1.2rem;
+	color:#31004a;
+	line-height: 3rem;
+}
+#contents_3 .board .notice-information .title a{
+	color:#31004a;
+	font-size:1.2rem;
+	line-height: 3rem;
+}
+
+#contents_3 .board .reviews{
+	float:right;
+	width:47%; height: 100%;
+}
+#contents_3 .board .reviews .title{
+	width:100%;
+	border-bottom:3px solid #31004a;
+	display: flex;
+	justify-content: space-between;
+}
+#contents_3 .board .reviews .title h4{
+	font-size:1.2rem;
+	color:#31004a;
+	line-height: 3rem;
+}
+#contents_3 .board .reviews .title a{
+	font-size:1.2rem;
+	color:#31004a;
+	line-height: 3rem;
+}
 
 /*---------------footer--------------*/
 footer{
