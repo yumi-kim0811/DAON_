@@ -407,25 +407,22 @@ section #contents_2  .pension p{
 	letter-spacing: 0px;
 	margin-top:28px;
 }
-section #contents_2 .button{
-	width:261px;
-	height:64px;
+#contents_2 button{
+	width:25%; height: 13%;
 	border-radius:354px;
 	background: #f2bb36;
 	margin:0 auto;
 	margin-top:28px;
+	border:none;
+	font-size:1.55rem;
+	font-weight: 600;
+	color:#fff;
+	transition:.5s;
 }
-section #contents_2 .button:hover{
+#contents_2 button:hover{
 	background: #47628d;
 }
-section #contents_2 .button a strong{
-	color:white;
-	font-size:30px;
-	font-family: '나눔스퀘어라운드';
-	margin: auto;
-	margin-left: 88px;
-	margin-top:20px;
-}
+
 
 /*--------------------contents_3--------------------*/
 #contents_3{
