@@ -439,7 +439,7 @@ section #contents_2  .pension p{
 	float:left;
 	width:47%; height: 100%;
 }
-#contents_3 .board .notice-information .title{
+/* #contents_3 .board .notice-information .title{
 	width:100%;
 	height: max-content;
 	border-bottom:3px solid #31004a ;
@@ -455,23 +455,31 @@ section #contents_2  .pension p{
 	color:#31004a;
 	font-size:1.2rem;
 	line-height: 3rem;
-}
+} */
 #contents_3 .board .notice-information table{
 	width:100%;
+	height: max-content;
+	display: flex;
+	justify-content : space-between;
 }
-#contents_3 .board .notice-information table tr{
-
-}	
-#contents_3 .board .notice-information table td{
-	font-size: 1.15rem;
-	line-height: 2.2rem;
+#contents_3 .board .notice-information table thead{
+	width:100%;
 }
-
+#contents_3 .board .notice-information table thead tr:nth-of-type(1){
+	width:100%;
+	border-bottom: 3px solid #31004a;
+}
+#contents_3 .board .notice-information table thead .board-latest-title{
+	font-size:1.2rem;
+	color:#31004a;
+	line-height: 3rem;
+}
+#contents_3 .board .notice-information table thead .board-latest-date a{
+	float:right;
+	color:yellow;
+}
 #contents_3 .board .notice-information table td:nth-last-of-type(1){
 	float:right;
-}
-#contents_3 .board .notice-information table tr td:hover{
-
 }
 #contents_3 .board .reviews{
 	float:right;
